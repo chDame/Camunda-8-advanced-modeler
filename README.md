@@ -11,7 +11,7 @@ The steps to build this project were :
 - add some modules to be able to use libraries with typescript in [bpmnio.d.ts](src/bpmnio.d.ts)
 - build the [modeler component](src/app/modeler/modeler.component.ts)
 - add a [service](src/app/services/elementtemplates.service.ts) that mocks element templates retrieval. In real life, that would get it from some backend app and inject that service in the modeler.
-- remove from elements from the list (Service task, Send task, Receive task) by [manipulating CSS](src/style.css#L25)
+- remove from elements from the list (Service task, Send task, Receive task) by [manipulating CSS](src/styles.css#L25)
 
 ## Development server
 
