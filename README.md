@@ -1,6 +1,17 @@
 # AdvancedModeler
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8.
+This project is an example of Camunda 8 Web modeler integrated in an angular 18 front-end :
+- showing how to add element templates
+- removing some elements 
+
+## Explanations
+
+The steps to build this project were :
+- to install [camunda-bpmn-js](https://www.npmjs.com/package/camunda-bpmn-js)
+- add some modules to be able to use libraries with typescript in [bpmnio.d.ts](src/bpmnio.d.ts)
+- build the [modeler component](src/app/modeler/modeler.component.ts)
+- add a [service](src/app/services/elementtemplates.service.ts) that mocks element templates retrieval. In real life, that would get it from some backend app and inject that service in the modeler.
+- remove from elements from the list (Service task, Send task, Receive task) by [manipulating CSS](src/style.css#L25)
 
 ## Development server
 

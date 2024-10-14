@@ -1,0 +1,9 @@
+<button class="btn btn-primary switchView" (click)="switchView()">{{view=='modeler' ? 'XML' : 'Modeler'}}</button>
+<div [ngClass]="view=='modeler' ? 'main' : 'main hidden'">
+<div #modeler class="modeler"></div>
+<div #properties class="properties-panel"></div>
+</div>
+<div [ngClass]="view=='xml' ? '' : 'hidden'">
+<pre class="processDef" lang="xml">{{processDef}}</pre>
+
+</div>

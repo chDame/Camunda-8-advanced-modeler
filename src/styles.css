@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '../node_modules/camunda-bpmn-js/dist/assets/camunda-cloud-modeler.css';
+/*@import '../node_modules/camunda-dmn-js/dist/assets/diagram-js.css';
+@import '../node_modules/camunda-dmn-js/dist/assets/dmn-js-boxed-expression.css';
+@import '../node_modules/camunda-dmn-js/dist/assets/dmn-js-boxed-expression-controls.css';
+@import '../node_modules/camunda-dmn-js/dist/assets/dmn-js-decision-table.css';
+@import '../node_modules/camunda-dmn-js/dist/assets/dmn-js-decision-table-controls.css';
+@import '../node_modules/camunda-dmn-js/dist/assets/dmn-js-drd.css';
+@import '../node_modules/camunda-dmn-js/dist/assets/dmn-js-literal-expression.css';
+@import '../node_modules/camunda-dmn-js/dist/assets/dmn-js-shared.css';
+@import '../node_modules/camunda-dmn-js/dist/assets/dmn-font/css/dmn.css';
+*/
+
+/* custom */
+.djs-container.with-palette .dmn-definitions {
+  display: none;
+}
+
+.djs-palette.two-column.open {
+  width: 50px;
+}
+
+/* remove undesired elements */
+.djs-popup-body li.entry[title='Service task'],
+.djs-popup-body li.entry[title='Send task'],
+.djs-popup-body li.entry[title='Receive task'] {
+    display: none;
+}
