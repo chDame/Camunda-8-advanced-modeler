@@ -10,6 +10,7 @@ The steps to build this project were :
 - to install [camunda-bpmn-js](https://www.npmjs.com/package/camunda-bpmn-js)
 - add some modules to be able to use libraries with typescript in [bpmnio.d.ts](src/bpmnio.d.ts)
 - build the [modeler component](src/app/modeler/modeler.component.ts)
+- The webmodeler requires some CSS to look good. Pay attention to the modeler template structure, the modeler component css and the [styles.css](src/styles.css#L3) where we import the camunda-bpmn-js css 
 - add a [service](src/app/services/elementtemplates.service.ts) that mocks element templates retrieval. In real life, that would get it from some backend app and inject that service in the modeler.
 - remove from elements from the list (Service task, Send task, Receive task) by [manipulating CSS](src/styles.css#L25)
 
